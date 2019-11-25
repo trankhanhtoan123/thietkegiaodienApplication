@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/hinnen3"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:paddingLeft="120dp"
+        android:text="Đăng Ký"
+        android:textColor="@color/colorAccent"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:paddingLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/edtname"
+        android:layout_width="335dp"
+        android:layout_height="42dp"
+
+        android:hint="nhập tên nhân vật dài 8 kí tự..."
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:paddingLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:maxLength="10"
+        android:id="@+id/edtpass"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="pass dài 10 ký tự"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:paddingLeft="8dp"
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/edtrepass"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="nhập lại mật khẩu"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpass"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnxoalogin"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_buttun3"
+        android:text="xóa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtrepass"
+        app:layout_constraintVertical_bias="0.0"
+
+        />
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btndangkylogin"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custtom_buttun4"
+        android:text="đăng ký"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/btnxoalogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtrepass"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

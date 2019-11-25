@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Loginctivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/imganhnen1"
+        android:layout_width="575dp"
+        android:layout_height="814dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228"
+        app:srcCompat="@drawable/anhnen2" />
+
+    <ImageView
+
+        android:id="@+id/imganhnen"
+        android:layout_width="331dp"
+        android:layout_height="183dp"
+        app:layout_constraintBottom_toTopOf="@+id/imganhnen1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imganhnen1"
+        app:layout_constraintVertical_bias="0.746"
+        app:srcCompat="@drawable/hinhnen4" />
+
+    <Button
+
+        android:id="@+id/btndangnhap"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:background="@drawable/custom_buttun"
+        android:text="đăng nhập"
+        android:textColor="@color/colorText"
+        android:textSize="10pt"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imganhnen"
+        app:layout_constraintEnd_toStartOf="@+id/imganhnen1"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/imganhnen1"
+        app:layout_constraintTop_toBottomOf="@+id/imganhnen1"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <Button
+        android:id="@+id/btndangky"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:background="@drawable/buttun2_custum"
+        android:text="đăng ký"
+        android:textColor="@color/colorText"
+        android:textSize="10pt"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imganhnen1"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/imganhnen1"
+        app:layout_constraintTop_toBottomOf="@+id/btndangnhap"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <ViewFlipper
+        android:layout_marginTop="150dp"
+        android:id="@+id/viewflipper"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndangky"
+        app:layout_constraintVertical_bias="0.569">
+
+        <ImageView
+            android:id="@+id/imgtatloa"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:src="@drawable/moloa"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/imgmoloa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tatloa1" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="237dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="10pt"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imganhnen1"
+        app:layout_constraintEnd_toStartOf="@+id/imganhnen1"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/imganhnen1"
+        app:layout_constraintTop_toBottomOf="@+id/btndangky"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
