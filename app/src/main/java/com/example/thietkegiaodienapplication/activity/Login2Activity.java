@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.thietkegiaodienapplication.MainActivity;
 import com.example.thietkegiaodienapplication.R;
 import com.example.thietkegiaodienapplication.dao.UserDAO;
 import com.example.thietkegiaodienapplication.model.User;

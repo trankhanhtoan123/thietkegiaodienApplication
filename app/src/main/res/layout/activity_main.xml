@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/anhnen5"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <Button
         android:id="@+id/button4"
         android:layout_width="177dp"
         android:layout_height="62dp"
+        android:background="@drawable/custom_buton7"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -58,6 +59,7 @@
         app:layout_constraintVertical_bias="0.487" />
 
     <Button
+        android:background="@drawable/custom__buttom5"
         android:id="@+id/button2"
         android:layout_width="178dp"
         android:layout_height="61dp"
@@ -70,6 +72,7 @@
         app:layout_constraintVertical_bias="0.175" />
 
     <Button
+        android:background="@drawable/custom_buton6"
         android:id="@+id/button3"
         android:layout_width="177dp"
         android:layout_height="62dp"
