@@ -8,8 +8,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -19,6 +17,7 @@ import android.widget.ViewFlipper;
 import com.example.thietkegiaodienapplication.LisUserActivity;
 import com.example.thietkegiaodienapplication.R;
 import com.example.thietkegiaodienapplication.dao.UserDAO;
+import com.example.thietkegiaodienapplication.database.UserDatabase;
 import com.example.thietkegiaodienapplication.model.User;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -33,6 +32,7 @@ public class Loginctivity extends AppCompatActivity {
     Button btndangnhap, btndangky;
     List<User> users;
     UserDAO userDAO;
+
     ImageView imgtatloa, imgmoloa;
     ViewFlipper viewFlipper;
     LoginButton loginButton;
@@ -41,6 +41,8 @@ public class Loginctivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        UserDatabase userDatabase = new UserDatabase(this);
+        userDatabase.createDataBase();
         btndangnhap = findViewById(R.id.btndangnhap);
         btndangky = findViewById(R.id.btndangky);
         btndangky.setOnClickListener(new View.OnClickListener() {
@@ -130,11 +132,12 @@ public class Loginctivity extends AppCompatActivity {
                 } else if (!pass.equals(repass)) {
                     Toast.makeText(Loginctivity.this, "Mật khẩu nhập lại sai", Toast.LENGTH_SHORT).show();
                 } else {
-                    User user = new User();
+                    User user = new User(name, pass);
                     user.name = name;
                     user.pass = pass;
                     users.add(user);
-                    long re = userDAO.insertuser(user);
+
+                    long re = userDAO.insert(user);
                     if (re > 0) {
                         Toast.makeText(Loginctivity.this, "Thêm thành công", Toast.LENGTH_SHORT).show();
                         edtname.setText("");

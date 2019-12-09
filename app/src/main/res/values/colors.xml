@@ -8,9 +8,10 @@
     <color name="text">#996666</color>
     <color name="VANG">#FFFF99</color>
     <color name="buttun3">#CCFFFF</color>
-    <color name="buttun4">#FFF380</color>
+    <color name="buttun4">#D8FFEB3B</color>
     <color name="maudo">#FFE1FF
     </color>
-    <color name="mauxanhlacay">#52D017
+    <color name="maudotai">#C8F44336	</color>
+    <color name="mauxanhlacay">#CECDDC39
     </color>
 </resources>

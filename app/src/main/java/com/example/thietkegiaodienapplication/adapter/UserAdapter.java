@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,13 +18,12 @@ import com.example.thietkegiaodienapplication.activity.Login2Activity;
 import com.example.thietkegiaodienapplication.dao.UserDAO;
 import com.example.thietkegiaodienapplication.model.User;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHowder> {
     List<User> users;
     Context context;
-    UserDAO userDAO = new UserDAO(context);
+    UserDAO userDAO ;
 
 
     public UserAdapter(List<User> users, Context context) {

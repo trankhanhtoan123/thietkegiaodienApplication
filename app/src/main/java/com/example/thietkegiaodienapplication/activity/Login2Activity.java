@@ -38,19 +38,19 @@ public class Login2Activity extends AppCompatActivity {
         btndangnhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-          userDAO=new UserDAO(Login2Activity.this);
+                userDAO = new UserDAO(Login2Activity.this);
                 String pass = edtpass.getText().toString();
                 String name = textView.getText().toString();
                 User user = new User(name,pass);
-         Boolean r= userDAO.isLogin(user);
-         if(r){
-             Toast.makeText(Login2Activity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-             Intent intent= new Intent(Login2Activity.this, MainActivity.class);
-             startActivity(intent);
-         }
-         else {
-             Toast.makeText(Login2Activity.this, "Thất bại", Toast.LENGTH_SHORT).show();
-         }
+                Boolean r= userDAO.isLogin(user);
+                if(r){
+                    Toast.makeText(Login2Activity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    Intent intent= new Intent(Login2Activity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(Login2Activity.this, "Thất bại", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

@@ -1,25 +1,14 @@
 package com.example.thietkegiaodienapplication.model;
 
 public class User {
-    public String name,pass,namenv,danhhieu;
+    public String name,pass,danhhieu;
     public double taisan;
     public int lever;
 
-    public User(String name, String pass, String namenv, String danhhieu, double taisan, int lever) {
-        this.name = name;
-        this.pass = pass;
-        this.namenv = namenv;
-        this.danhhieu = danhhieu;
-        this.taisan = taisan;
-        this.lever = lever;
+    public User() {
     }
 
     public User(String name, String pass) {
-        this.name = name;
-        this.pass = pass;
-    }
-
-    public User() {
     }
 
     public String getName() {
@@ -36,14 +25,6 @@ public class User {
 
     public void setPass(String pass) {
         this.pass = pass;
-    }
-
-    public String getNamenv() {
-        return namenv;
-    }
-
-    public void setNamenv(String namenv) {
-        this.namenv = namenv;
     }
 
     public String getDanhhieu() {
