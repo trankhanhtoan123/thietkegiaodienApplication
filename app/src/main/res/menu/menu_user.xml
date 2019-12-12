@@ -5,9 +5,6 @@
         android:id="@+id/itemdoikhatkhau"
         android:title="Đổi mật khẩu" />
     <item
-        android:id="@+id/itemtaikhoan"
-        android:title="Tài khoản" />
-    <item
         android:id="@+id/itemdangxuat"
         android:title="Đăng xuất" />
 </menu>

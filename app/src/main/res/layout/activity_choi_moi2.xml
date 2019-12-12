@@ -134,34 +134,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="48dp"
-        android:layout_height="19dp"
-        android:gravity="center"
-        android:text="LEVER"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvcauhoi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toEndOf="@+id/tvtime"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/tvlever"
-        android:layout_width="65dp"
-        android:layout_height="19dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvcauhoi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <Button
         android:textAllCaps="false"
         android:id="@+id/btna"

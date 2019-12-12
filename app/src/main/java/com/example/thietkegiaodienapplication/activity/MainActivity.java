@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.thietkegiaodienapplication.LisUserActivity;
 import com.example.thietkegiaodienapplication.R;
@@ -24,7 +25,6 @@ Button btnchoi,btntop,btnintro;
 public static List<Check> checks;
 public static int cauhoi;
 public static int diem ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,7 @@ public static int diem ;
      btnchoi=findViewById(R.id.btnchoi);
      btntop=findViewById(R.id.btntop);
      btnintro=findViewById(R.id.btnintro);
+
      checks=new ArrayList<>();
      btnchoi.setOnClickListener(new View.OnClickListener() {
          @Override
@@ -66,10 +67,6 @@ public static int diem ;
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         if(item.getItemId()== R.id.itemdoikhatkhau){
             Intent intent = new Intent(MainActivity.this, DoimatkhauActivity.class);
-            startActivity(intent);
-        }
-        else if(item.getItemId()== R.id.itemtaikhoan){
-            Intent intent = new Intent(MainActivity.this, UserActivity.class);
             startActivity(intent);
         }
         else if(item.getItemId()==R.id.itemdangxuat){

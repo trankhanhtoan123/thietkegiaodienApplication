@@ -35,12 +35,15 @@ public class ChoiMoi2Activity extends AppCompatActivity {
     TextView tvcauhoi, tvthoigian, tvdiem, tvlever, tvluotchoi, tvsoluongcauhoi;
     List<CauHoi> cauHois;
     CauHoiDAO cauHoiDAO;
+
     public int code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choi_moi2);
+
+
         btna = findViewById(R.id.btna);
         btnb = findViewById(R.id.btnb);
         btnc = findViewById(R.id.btnc);
@@ -57,11 +60,14 @@ public class ChoiMoi2Activity extends AppCompatActivity {
         cauHoiDAO = new CauHoiDAO(this);
         cauHois = cauHoiDAO.getAll();
 
+       // String cvdiem = String.valueOf();
+
         code = (int) Math.floor(((Math.random() * (cauHois.size() - 1)) + 0));
 
         tvsoluongcauhoi.setText(MainActivity.cauhoi + "/30");
         tvdiem.setText(String.valueOf(MainActivity.diem));
         tvluotchoi.setText(String.valueOf(luotchoi));
+
         for (int i = 0; i < MainActivity.checks.size(); i++) {
             if (code == MainActivity.checks.get(i).abc) {
                 code = (int) Math.floor(((Math.random() * (cauHois.size() - 1)) + 0));
@@ -163,6 +169,10 @@ public class ChoiMoi2Activity extends AppCompatActivity {
                 tvsoluongcauhoi.setText(MainActivity.cauhoi + "/30");
                 tvdiem.setText(String.valueOf(MainActivity.diem));
                 tvluotchoi.setText(String.valueOf(luotchoi));
+
+                int kiemtra=MainActivity.diem-30;
+
+
                 for (int i = 0; i < MainActivity.checks.size(); i++) {
                     if (code == MainActivity.checks.get(i).abc) {
                         code = (int) Math.floor(((Math.random() * (cauHois.size() - 1)) + 0));
@@ -401,7 +411,6 @@ public class ChoiMoi2Activity extends AppCompatActivity {
         dialog.show();
 
     }
-
 
 
 }

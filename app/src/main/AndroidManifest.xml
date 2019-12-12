@@ -13,7 +13,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.TOPActivity"></activity>
         <activity android:name=".activity.ChoiMoi2Activity" />
-        <activity android:name=".activity.UserActivity" />
         <activity android:name=".activity.DoimatkhauActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.Login2Activity" />
