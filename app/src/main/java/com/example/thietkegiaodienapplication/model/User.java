@@ -2,13 +2,19 @@ package com.example.thietkegiaodienapplication.model;
 
 public class User {
     public String name,pass,danhhieu;
-    public double taisan;
+    public int diem;
     public int lever;
 
     public User() {
     }
 
     public User(String name, String pass) {
+        this.name = name;
+        this.pass = pass;
+    }
+
+    public User(int diem) {
+        this.diem = diem;
     }
 
     public String getName() {
@@ -35,12 +41,12 @@ public class User {
         this.danhhieu = danhhieu;
     }
 
-    public double getTaisan() {
-        return taisan;
+    public int getDiem() {
+        return diem;
     }
 
-    public void setTaisan(double taisan) {
-        this.taisan = taisan;
+    public void setDiem(int diem) {
+        this.diem = diem;
     }
 
     public int getLever() {
@@ -49,5 +55,19 @@ public class User {
 
     public void setLever(int lever) {
         this.lever = lever;
+    }
+
+    public User(String name, String pass, String danhhieu, int diem, int lever) {
+        this.name = name;
+        this.pass = pass;
+        this.danhhieu = danhhieu;
+        this.diem = diem;
+        this.lever = lever;
+    }
+
+    public void danhhieu(User user){
+        if(user.diem>5){
+
+        }
     }
 }

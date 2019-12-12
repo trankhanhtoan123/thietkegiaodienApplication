@@ -1,8 +1,10 @@
-package com.example.thietkegiaodienapplication;
+package com.example.thietkegiaodienapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.thietkegiaodienapplication.R;
 
 public class UserActivity extends AppCompatActivity {
 

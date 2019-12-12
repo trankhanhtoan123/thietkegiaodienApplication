@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserActivity"></activity>
-        <activity android:name=".DoimatkhauActivity" />
+        <activity android:name=".activity.ChoiMoi2Activity"></activity>
+        <activity android:name=".activity.UserActivity" />
+        <activity android:name=".activity.DoimatkhauActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.Login2Activity" />
 

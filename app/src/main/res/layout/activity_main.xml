@@ -8,7 +8,7 @@
     tools:context=".activity.MainActivity">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnintro"
         android:layout_width="177dp"
         android:layout_height="62dp"
         android:background="@drawable/custom_buton7"
@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btntop"
         app:layout_constraintVertical_bias="0.077" />
 
     <androidx.appcompat.widget.Toolbar
@@ -61,7 +61,7 @@
 
     <Button
 
-        android:id="@+id/button2"
+        android:id="@+id/btnchoi"
         android:layout_width="178dp"
         android:layout_height="61dp"
         android:background="@drawable/custom_buton5"
@@ -75,7 +75,7 @@
 
     <Button
         android:background="@drawable/custom_buton6"
-        android:id="@+id/button3"
+        android:id="@+id/btntop"
         android:layout_width="177dp"
         android:layout_height="62dp"
         android:text="TOP"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnchoi"
         app:layout_constraintVertical_bias="0.044" />
 
     <TextView
