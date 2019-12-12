@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">thietkegiaodienApplication</string>
     <string name="facebook_app_id">2541161575998747</string>
+    <string name="ok">dsgasdgd</string>
+    <string name="top">TOP</string>
+    <string name="stt">STT</string>
+    <string name="name">Tên Nhân Vật</string>
+    <string name="diemm">Điểm</string>
 </resources>

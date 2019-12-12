@@ -44,6 +44,13 @@ public static int diem ;
              startActivity(intent);
          }
      });
+     btntop.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent intent = new Intent(MainActivity.this,TOPActivity.class);
+             startActivity(intent);
+         }
+     });
        toolbar=findViewById(R.id.toolbar);
        setSupportActionBar(toolbar);
      }

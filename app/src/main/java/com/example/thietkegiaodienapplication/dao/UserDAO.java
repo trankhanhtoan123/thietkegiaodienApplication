@@ -22,9 +22,7 @@ public class UserDAO  {
     public String TABLE = "user";
     public String NAME = "name" ;
     public String PASS = "pass" ;
-    public String DANHHIEU = "danhdieu" ;
-    public String DIEM = "diem" ;
-    public String LEVER = "lever";
+
 
 
 
@@ -43,9 +41,7 @@ public class UserDAO  {
 
                 class_user.name = cursor.getString(0);
                 class_user.pass = cursor.getString(1);
-                class_user.danhhieu = cursor.getString(2);
-                class_user.diem = cursor.getInt(3);
-                class_user.lever = cursor.getInt(4);
+
                 class_userList.add(class_user);
 
             } while (cursor.moveToNext());
@@ -61,9 +57,6 @@ public class UserDAO  {
         ContentValues contentValues  = new ContentValues();
         contentValues.put(NAME,user.name);
         contentValues.put(PASS,user.pass);
-        contentValues.put(DANHHIEU,user.danhhieu);
-        contentValues.put(DIEM,user.diem);
-        contentValues.put(LEVER,user.lever);
         long result = sqLiteDatabase.insert(TABLE,null,contentValues);
 
         sqLiteDatabase.close();
@@ -90,18 +83,6 @@ public class UserDAO  {
 
         return false;
     }
-    public long update(User user){
 
-        SQLiteDatabase sqLiteDatabase = userDatabase.getWritableDatabase();
-        ContentValues contentValues  = new ContentValues();
-        contentValues.put(NAME,user.name);
-        contentValues.put(PASS,user.pass);
-        contentValues.put(DANHHIEU,user.danhhieu);
-        contentValues.put(DIEM,user.diem);
-        contentValues.put(LEVER,user.lever);
-        long result = sqLiteDatabase.update(TABLE,contentValues,NAME + "=?", new String[]{user.name});
-        sqLiteDatabase.close();
-        return result;
-    }
 
     }
